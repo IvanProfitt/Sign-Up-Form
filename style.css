@@ -1,0 +1,82 @@
+@font-face {
+    font-family:'Raleway';
+    src: url(fonts/raleway/Raleway-Regular.ttf);
+}
+
+html{
+    height:100%;
+}
+
+body{
+   display:flex;
+   height:100%;
+   font-family: Raleway;
+   margin:0px;
+   padding:0px;
+}
+.image{
+    float:left;
+    height:100%;
+    width:35%;
+    background-size:cover;
+    background-image: url("images/sasha-putsyk-S5_jTa1CIh0-unsplash.jpg");
+}
+.formDiv{
+    width:100%;
+}
+
+.formInputs{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap:10px;
+    background-color: #FAF9F6;
+    width:100%;
+    padding-top:20px;
+    padding-bottom:20px;
+    -webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75);
+}
+
+input,label{
+    background-color: #FAF9F6;
+    display:block;
+    margin:10px;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: black
+}
+
+input:focus{
+
+}
+
+
+.info{
+    display:flex;
+    min-width: 0px;
+    flex-direction: column;
+    float:right;
+    display:flex;
+    width:75%;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:540px) {
+    body {
+        height:200%;
+      display:flex;
+      flex-direction: column;
+    }
+    .image{
+        height:100%;
+        width:100%;
+        background-size:cover;
+        background-image: url("images/sasha-putsyk-S5_jTa1CIh0-unsplash.jpg");
+    }
+    .info{
+        height:100%;
+        width:100%;
+    }
+ }
