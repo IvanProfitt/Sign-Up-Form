@@ -21,6 +21,13 @@ body{
     background-size:cover;
     background-image: url("images/sasha-putsyk-S5_jTa1CIh0-unsplash.jpg");
 }
+
+
+
+.logo{
+    width: 100px;
+    height:100px;
+}
 .formDiv{
     width:100%;
 }
@@ -33,21 +40,55 @@ body{
     width:100%;
     padding-top:20px;
     padding-bottom:20px;
+    justify-content: center;
+    align-items: center;
     -webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75);
     box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75);
 }
 
-input,label{
+
+
+.text,label{
     background-color: #FAF9F6;
     display:block;
     margin:10px;
     outline: 0;
     border-width: 0 0 2px;
-    border-color: black
+    border-color: black;
+}
+.submit{
+    margin:50px;
+    height:50px;
+    width:150px;
+    border-radius: 5px;
+    border:none;
+    background-color: #966c98;
+    -webkit-box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.25);
+    box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.25);
+    transition: background-color 0.3s;
+}
+    
+
+
+.submit:hover{
+    background-color: #853056;
 }
 
-input:focus{
+
+
+
+.opaque{
+    display: flex;
+    background-color: rgba(0,0,0,0.75);
+    opacity: .8;
+    height:100px;
+    width:35%;
+    position:fixed;
+    margin-top:135px;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -58,14 +99,53 @@ input:focus{
     flex-direction: column;
     float:right;
     display:flex;
-    width:75%;
+    width:65%;
     justify-content: center;
     align-items: center;
+}
+
+.credit{
+    display:inline;
+    justify-content: end;
+    color:white;
+    position: absolute;
+    text-align:center;
+    bottom:0;
+    width:35%;
+    
+}
+
+a{
+    color:white;
+}
+
+.pageCredit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    bottom:0;
+    background-color: #D3D3D3;
+    width:65%;
+    padding:5px;
+    -webkit-box-shadow: 1px -12px 15px -8px rgba(211,211,211,1);
+-moz-box-shadow: 1px -12px 15px -8px rgba(211,211,211,1);
+box-shadow: 1px -12px 15px -8px rgba(211,211,211,1);
+}
+
+.ivan{
+margin: 15px;
+}
+
+.github{
+    height:50px;
 }
 
 @media (max-width:540px) {
     body {
         height:200%;
+        margin:0px;
+        padding:0px;
       display:flex;
       flex-direction: column;
     }
@@ -75,8 +155,29 @@ input:focus{
         background-size:cover;
         background-image: url("images/sasha-putsyk-S5_jTa1CIh0-unsplash.jpg");
     }
+    .opaque{
+        width:100%;
+        position:relative;
+    }
+    .credit{
+        width:100%;
+    }
+    .logo{
+    }
     .info{
+        margin:0px;
+        padding:0px;
         height:100%;
+        width:100%;
+    }
+    .bannerInfo{
+        align-items: center;
+    }
+    .pageCredit{
+        margin:0px;
+        padding:5px;
+        position:relative;
+        bottom:0;
         width:100%;
     }
  }

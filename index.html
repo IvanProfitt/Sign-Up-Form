@@ -8,41 +8,66 @@
 </head>
 <body>
     <div class="image">
+    <div class="opaque">
+            <img class="logo" src="images/odin-lined (1).png">
+            <h1 style="color:white;">Form!</h1>
     </div>
+    <div class="credit">
+        <p>Photo by
+        <a href="https://unsplash.com/@sash0k?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+            Sasha Putsyk
+        </a>
+        on
+        <a href="https://unsplash.com/photos/S5_jTa1CIh0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+            Unsplash</p>
+        </a>
+    </div>
+    <div class="image-credit"></div>
+</div>
+
     <div class="info">
         <h1>Sign up</h1>
         <div class="formDiv">
             <form class="formInputs">
                 <div>
                     <label for="first_name">First Name:</label>
-                    <input type="text" name="first_name" id="first_name">
+                    <input type="text" class="text" name="first_name" id="first_name">
                 </div>
                 <div>
                     <label for="last_name">Last Name:</label>
-                    <input type="text" name="last_name" id="last_name">
+                    <input type="text" class="text" name="last_name" id="last_name">
                 </div>
                 <div>
                     <label for="email">Email:</label>
-                    <input type="text" name="email" id="email">
+                    <input type="email" class="text" name="email" id="email">
                 </div>
                 <div>
                     <label for="phone_number">Phone Number:</label>
-                    <input type="text" name="phone" id="phone_number">
+                    <input type="tel" class="text" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required id="phone_number">
                 </div>
                 <div>
                     <label for="password">Password:</label>
-                    <input type="text" name="password" id="password">
+                    <input type="password" class="text" name="password" id="password">
                 </div>
                 <div>
                     <label for="confirm_password">Confirm Password:</label>
-                    <input type="text" name="confirm_password" id="confirm_password">
+                    <input type="password" class="text" name="confirm_password" id="confirm_password">
                 </div>
 
 
             </form>
-            <input type="button" value="Submit">
+            <input type="button" class="submit" value="Create Acount">
+        </div>
+
+        <div class="pageCredit">
+            <p class="ivan">Made by Ivan Profitt</p>
+            <a href="https://www.github.com/ivanprofitt">
+                <img class="github" src="images/25231 (1).png">
+            </a>
+        
         </div>
     </div>
+
     
 </body>
 <script src="script.js"></script>
