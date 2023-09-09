@@ -30,23 +30,22 @@ body{
 }
 .formDiv{
     width:100%;
+    padding:100px;
 }
 
-.formInputs{
+.formInputs, .input:empty ,.input:focus{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap:10px;
     background-color: #FAF9F6;
     width:100%;
-    padding-top:20px;
-    padding-bottom:20px;
+    padding:20px;
     justify-content: center;
-    align-items: center;
+    align-items:center;
     -webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75);
     box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75);
 }
-
 
 
 .text,label{
@@ -54,9 +53,22 @@ body{
     display:block;
     margin:10px;
     outline: 0;
+    height:25px;
     border-width: 0 0 2px;
     border-color: black;
+    transition: border-color 0.3s;
+    transition:border .3s;
 }
+
+.text:focus{
+    -webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75);
+    border: 0 0 2px;
+    border-color:blue;
+
+}
+
 .submit{
     margin:50px;
     height:50px;
@@ -115,6 +127,7 @@ body{
     
 }
 
+
 a{
     color:white;
 }
@@ -125,6 +138,7 @@ a{
     justify-content: center;
     position:absolute;
     bottom:0;
+    margin-left:10px;
     background-color: #D3D3D3;
     width:65%;
     padding:5px;
@@ -176,7 +190,7 @@ margin: 15px;
     .pageCredit{
         margin:0px;
         padding:5px;
-        position:relative;
+        position:fixed;
         bottom:0;
         width:100%;
     }
